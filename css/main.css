@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+* /*reset browser settings */
+{
+	margin:0;
+	padding:0;
+}
+
+body, header, article, nav, section, footer, aside
+{
+	display:block; /*helps older browsers to display HTML5 elements*/
+}
+
+/******************************HTML5******************************/
+
+header {
+	background-color: #CCC;
+	color: #FFF;
+	width: 100vw; /* This 100% width of the screen */
+	height: 100vh; /* This is 100% of the viewport (devices) */
+	overflow: hidden; /*Hides any content too big for the screen */
+}
+nav {
+	background-color: #000;
+	color: #FFFFFF;
+	height: 50px;
+	width: 100%;
+	position: fixed; /* makes divstick on top of the screen */
+	left: 0px; /* positions the div at the very left of the screen */
+	top: 0px; /* positions the div at the very top of the screen */
+	z-index: 3; /* makes the div become layer 3 in the base stack */
+	text-align: left;
+	font-size: 24px;
+	font-weight: 600;
+	padding-left: 10%;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 50px;
+	font-family: 'Roboto Condensed', sans-serif;
+	box-shadow: 0px 5px 15px 2px #FFF /* this increases dp */;
+	
+}
+article {
+	background-color: #e0dddd;
+	color: #000;
+	padding-bottom: 10px;
+	
+}
+section {
+	
+	margin: 0px 10px 0px 10px;
+}
+footer {
+	color: #000;
+	background-color: #FF6;
+	/*margin: 20px 0px 0px 0px; /* puts 20px margin on the top of the footer*/
+}
+body
+{
+	background-color: #00F;
+	text-align: center;
+	overflow: visible;
+	font-family: 'Actor', sans-serif;
+	font-weight: 100;
+}
+iframe /*to customise the iframe*/
+{
+	padding: 10px 10px 0px 0px;
+} 
+    
+/******************************classes*****************************/
+
+.wrap {
+	margin: auto;
+	width: 100%;	
+}
+
+.cell
+{
+	width: 40%;
+	display: inline-block;
+	padding: 5px 10px;
+	/*box-shadow: 0px 5px 5px 0px #FFF;*/
+	font-family: 'Actor', sans-serif;
+	z-index: -2;
+		
+}
+
+.nav
+{
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #000;
+	color: #FFFFFF;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.images img /*targets individual images within images class*/
+{
+	padding: 10px; /*applies padding to all sides*/
+	/*height: 210px; /*overides actual size of pictures*/
+	/*width: 210px; /*overides actual size of pictures*/
+	image-align: left;
+	
+}
+
+.bodyimages
+{
+	position: absolute;
+	left: 1561px;
+	/*z-index: -1;*/
+	top: 1011px;
+}         
+/********************Link Styling**********************/
+
+nav ul /* only targets ul inside nav div */
+{
+	text-decoration: none; /* removes underline*/
+	line-style: none; /* removes bullet points*/
+	display: inline; /*displays content horizontally accors page*/
+}
+nav ul li /*targets only li inside nav div*/
+{
+	display:inline; /*displays content horizontally accros page*/
+	transition: all 0.3s ease 0s;
+}
+nav li:hover
+{
+	color:#FFF;
+	border-top: outset 4px;
+	border-bottom: outset 4px #FFF;
+}
+
+a:link, a:active, a:hover, a:visited
+
+{
+	text-decoration: none; /* removes underline*/
+	line-style: none; /* removes bullet points*/
+	color: inherit; /* inhertis colour from parent div (removes blue) */
+}
